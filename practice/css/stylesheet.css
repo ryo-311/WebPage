@@ -1,0 +1,20 @@
+header{
+  height: 100px;
+  width: auto;
+}
+
+.header-logo{
+  width: 200px;
+  height: 80px;
+  float: left;
+}
+
+.header-menu ul{
+  display: flex;
+  list-style: none;
+  float: right;
+}
+
+.top-wrapper{
+  width: 100%;
+}
