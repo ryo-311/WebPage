@@ -875,6 +875,8 @@ progress {
 .g-4,
 .gx-4 {
   --bs-gutter-x: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .g-4,
@@ -1374,8 +1376,8 @@ progress {
   }
 
   .col-lg-3 {
-    flex: 0 0 auto;
-    width: 25%;
+    width: 33.333333333%;
+    height: auto;
   }
 
   .col-lg-4 {
@@ -7754,6 +7756,11 @@ textarea.form-control-lg {
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-purple {
+  --bs-text-opacity: 1;
+  color: #8642a4;
+}
+
 .text-body {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-body-rgb), var(--bs-text-opacity)) !important;
@@ -7797,7 +7804,7 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #ffedde;
 }
 
 .bg-secondary {
@@ -7832,7 +7839,7 @@ textarea.form-control-lg {
 
 .bg-dark {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #ffedde;
 }
 
 .bg-black {
@@ -11288,6 +11295,7 @@ body {
 
 .page-section {
   padding: 8rem 0;
+  background-color: #ffedde;
 }
 
 .text-white-75 {
@@ -11307,7 +11315,7 @@ hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;
   margin: 1.5rem auto;
-  background-color: #f4623a;
+  background-color: #40244d;
   opacity: 1;
 }
 
@@ -11334,10 +11342,10 @@ hr.divider-light {
   padding: 0.75rem 0;
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
-  color: #f4623a;
+  color: #40244d;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #f4623a !important;
+  color: #40244d !important;
 }
 @media (min-width: 992px) {
   #mainNav {
@@ -11387,13 +11395,15 @@ header.masthead {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: contain;
+  background-size: cover;
 }
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
 }
 @media (min-width: 992px) {
   header.masthead {
+    height: 100vh;
+    min-height: 40rem;
     padding-top: 4.5rem;
     padding-bottom: 0;
   }
@@ -11444,4 +11454,8 @@ header.masthead h1, header.masthead .h1 {
 }
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
+}
+
+.column{
+  width: 100%;
 }
